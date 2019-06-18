@@ -1,9 +1,16 @@
+* {
+    box-sizing: border-box;
+}
 h1 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 p {
     color: #666666;
     font-size: 22px;
+}
+.wrapper {
+    width: 60%;
+    margin: 140px auto;
 }
 form {
     text: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -35,6 +42,7 @@ hr {
     border-bottom: 2px solid #dddddd;   
 }
 #whitebox {
+    float: right;
     position: fixed;
     margin: 0;
     top: 0;
@@ -45,9 +53,10 @@ hr {
     border-bottom: solid #dddddd;
 }
 #namebox {
+    clear: both;
     position: fixed;
-    top: 16px;
-    left: 230px;
+    top: 14px;
+    left: 5%;
     background-color: #4aaaa5;
     color: #ffffff;
     width: 240px;
@@ -58,12 +67,11 @@ nav {
     position: fixed;
     margin: 50px;
     top: 0;
-    right: 20%;
+    right: 0;
     color: #dddddd;
 }
 #container {
-    margin: 150px 200px 100px 230px;
-    width: 60%;
+    margin: 0 auto;
     padding: 20px 45px 20px 45px;
     background-color: #ffffff;
     color: #4aaaa5;
@@ -104,14 +112,43 @@ footer {
     color: #ffffff;
     text-align: center;
 }
+
 @media screen and (max-width: 980px) {
 
+    .wrapper {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
+.wrapper {
+    width: 70%;
+}
+nav {
+    text-align: left;
+}
 }
 
 @media screen and (max-width: 640px) {
-
+.wrapper {
+    width: 90%;
+}
+#container {
+    margin-top: 50%;
+}
+#whitebox
+#namebox,
+nav {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    padding: 0px;
+    border-left: 0px;
+}
+nav {
+    margin-top: 25%;
+    background: #ffffff;
+    padding: 5%;
+}
 }
